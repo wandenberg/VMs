@@ -16,3 +16,5 @@ sed -i 's/^templatedir=/#templatedir=/' /etc/puppet/puppet.conf
 sed -i 's/^START=no/START=yes/' /etc/default/puppet
 
 puppet resource service puppet ensure=running enable=true
+
+puppet agent --test
