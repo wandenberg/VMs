@@ -9,7 +9,7 @@ rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.r
 yum -y install http://yum.theforeman.org/releases/1.6/el6/x86_64/foreman-release.rpm
 yum -y install foreman-installer
 
-foreman-installer --foreman-db-type mysql
+foreman-installer --foreman-db-type mysql --foreman-admin-password admin
 
 sed -i 's/show_diff     = false/show_diff     = true/' /etc/puppet/puppet.conf
 

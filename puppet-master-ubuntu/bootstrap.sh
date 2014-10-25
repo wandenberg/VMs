@@ -15,7 +15,7 @@ apt-get update
 apt-get install -y puppetmaster-passenger
 apt-get install -y foreman-installer
 
-foreman-installer --foreman-db-type mysql
+foreman-installer --foreman-db-type mysql --foreman-admin-password admin
 
 sed -i 's/^templatedir/#templatedir/'                  /etc/puppet/puppet.conf
 sed -i 's/show_diff     = false/show_diff     = true/' /etc/puppet/puppet.conf
