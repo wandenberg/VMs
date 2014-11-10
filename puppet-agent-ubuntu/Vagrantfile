@@ -12,6 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "puppet-agent.local.vms.com"
 
   config.vm.provider :virtualbox do |vb, override|
-    vb.name = "puppet_agent_centos"
+    vb.name = "puppet_agent_ubuntu"
   end
 end
